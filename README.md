@@ -1,3 +1,17 @@
+# 支持阿里云盘映射为windows本地硬盘
+## 目录
+myali
+## 安装winFsp
+- 运行install目录下的winfsp-1.10.22006.msi
+- 安装mingw64, 请自行下载mingw64
+## 编译
+- 修改win11_build.ps1,设置mingw64，WinFsp的inc环境
+- 在myali目录下运行make命令
+## 配置
+- 获取阿里云盘的refresh_token(https://blog.csdn.net/qq_45876003/article/details/122847250)
+- 配置myali.conf文件
+
+# 以下为Rclone相关介绍
 [<img src="https://rclone.org/img/logo_on_light__horizontal_color.svg" width="50%" alt="rclone logo">](https://rclone.org/#gh-light-mode-only)
 [<img src="https://rclone.org/img/logo_on_dark__horizontal_color.svg" width="50%" alt="rclone logo">](https://rclone.org/#gh-dark-mode-only)
 
