@@ -8,7 +8,7 @@ myali
 - 修改win11_build.ps1,设置mingw64，WinFsp的inc环境
 - 在myali目录下运行make命令
 ## 配置
-- 获取阿里云盘的refresh_token(https://blog.csdn.net/qq_45876003/article/details/122847250)
+- 获取阿里云盘的[refresh_token](https://blog.csdn.net/qq_45876003/article/details/122847250)
 - 配置myali.conf文件
 
 # 以下为Rclone相关介绍
