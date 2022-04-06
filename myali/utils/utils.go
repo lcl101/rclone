@@ -29,7 +29,7 @@ func CurrentDirectory() string {
 	if i < 0 {
 		return ""
 	}
-	return string(path[0 : i+1])
+	return string(path[0:i])
 }
 
 func ConvertToString(src string, srcCode string, tagCode string) string {
@@ -50,7 +50,7 @@ func WebdavPath() string {
 }
 
 func WebdavLogsPath() string {
-	return CurrentDirectory() + string(os.PathSeparator) + "logs" + string(os.PathSeparator) + time.Now().Format("2006-01-02") + "-webdav-executor.txt"
+	return CurrentDirectory() + string(os.PathSeparator) + "logs" + string(os.PathSeparator) + "webdav-executor-" + time.Now().Format("2006-01-02") + ".log"
 }
 
 func ConfigPath() string {
